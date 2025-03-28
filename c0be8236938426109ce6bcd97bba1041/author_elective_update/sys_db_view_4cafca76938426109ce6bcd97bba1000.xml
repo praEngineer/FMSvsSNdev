@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
+    <sys_db_view action="DELETE">
+        <description>compare encumbrances in SN to FMS</description>
+        <label>FMS Encumberance Compare</label>
+        <name>x_dosny_fms_fmsencumberancecompare</name>
+        <plural/>
+        <sys_class_name>sys_db_view</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-06 20:21:19</sys_created_on>
+        <sys_id>4cafca76938426109ce6bcd97bba1000</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dosny_fms_fmsencumberancecompare</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_update_name>sys_db_view_4cafca76938426109ce6bcd97bba1000</sys_update_name>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-06 20:21:19</sys_updated_on>
+    </sys_db_view>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FMS">c0be8236938426109ce6bcd97bba1041</application>
+        <file_path/>
+        <instance_id>d1068f71dbe79b08439ef70fbf96194a</instance_id>
+        <instance_name>nycdsdev1</instance_name>
+        <name>sys_db_view_4cafca76938426109ce6bcd97bba1000</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view"><sys_db_view action="INSERT_OR_UPDATE"><description>compare encumbrances in SN to FMS</description><label>FMS Encumberance Compare</label><name>x_dosny_fms_fmsencumberancecompare</name><plural/><sys_class_name>sys_db_view</sys_class_name><sys_created_by>sfarkas</sys_created_by><sys_created_on>2025-03-06 20:21:19</sys_created_on><sys_id>4cafca76938426109ce6bcd97bba1000</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_dosny_fms_fmsencumberancecompare</sys_name><sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package><sys_policy/><sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope><sys_update_name>sys_db_view_4cafca76938426109ce6bcd97bba1000</sys_update_name><sys_updated_by>sfarkas</sys_updated_by><sys_updated_on>2025-03-06 20:21:19</sys_updated_on></sys_db_view></record_update>]]></payload>
+        <payload_hash>-1161232881</payload_hash>
+        <record_name>x_dosny_fms_fmsencumberancecompare</record_name>
+        <reverted_from/>
+        <source>10be8236938426109ce6bcd97bba1046</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-06 20:21:20</sys_created_on>
+        <sys_id>8ccf4e76938426109ce6bcd97bba10fd</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>1956d1ea72c0000001</sys_recorded_at>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-06 20:21:20</sys_updated_on>
+        <type>Database View</type>
+        <update_guid>40cf4e760c842610c70222f9acf34bfd</update_guid>
+        <update_guid_history>40cf4e760c842610c70222f9acf34bfd:-1161232881</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-07 21:20:17</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view">sys_db_view</sys_db_object>
+        <sys_id>10f2a0f2c074479688c8cebea86aa571</sys_id>
+        <sys_metadata>4cafca76938426109ce6bcd97bba1000</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dosny_fms_fmsencumberancecompare</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_parent/>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_scope_delete display_value="">6dd061b3fcdd4b3985d92e06a9fda499</sys_scope_delete>
+        <sys_update_name>sys_db_view_4cafca76938426109ce6bcd97bba1000</sys_update_name>
+        <sys_update_version display_value="sys_db_view_4cafca76938426109ce6bcd97bba1000">8ccf4e76938426109ce6bcd97bba10fd</sys_update_version>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-07 21:20:17</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

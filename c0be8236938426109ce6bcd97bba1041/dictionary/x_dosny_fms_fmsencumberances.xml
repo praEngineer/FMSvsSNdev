@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="d8ecba4f93c0a6109ce6bcd97bba10c7" label="FMSencumberances" max_length="40" name="x_dosny_fms_fmsencumberances" type="collection">
+        <element attributes="28" label="Acct. Line Amount" max_length="40" name="acct_line_amount" type="float"/>
+        <element attributes="16" label="Acct. Line Dept" max_length="3" name="acct_line_dept" type="string"/>
+        <element attributes="27" label="Acct. Line #" max_length="3" name="acct_line_number" type="string"/>
+        <element attributes="24" label="AFY" max_length="4" name="afy" type="string"/>
+        <element attributes="18" label="Approp" max_length="3" name="approp" type="string"/>
+        <element attributes="25" label="BFY" max_length="4" name="bfy" type="string"/>
+        <element attributes="19" label="Budget Code" max_length="4" name="budget_code" type="string"/>
+        <element attributes="29" label="Closed Line Amount" max_length="40" name="closed_line_amount" type="float"/>
+        <element attributes="26" label="Comm. Line #" max_length="3" name="comm_line_number" type="string"/>
+        <element attributes="21" label="Detail Object" max_length="4" name="detail_object" type="string"/>
+        <element attributes="13" label="Doc Encumb Amount" max_length="40" name="doc_encumb_amount" type="float"/>
+        <element attributes="14" label="Doc Expend Amount" max_length="40" name="doc_expend_amount" type="string"/>
+        <element attributes="07" label="Encumbrance Description" max_length="255" name="encumbrance_description" type="string"/>
+        <element attributes="06" label="Encumbrance Method" max_length="3" name="encumbrance_method" type="string"/>
+        <element attributes="05" label="Encumbrance Type" max_length="3" name="encumbrance_type" type="string"/>
+        <element attributes="01" label="Enc Doc Code" max_length="4" name="enc_doc_code" type="string"/>
+        <element attributes="02" label="Enc Doc Dept Code" max_length="3" name="enc_doc_dept_code" type="string"/>
+        <element attributes="03" label="Enc Doc ID" max_length="11" name="enc_doc_id" type="string"/>
+        <element attributes="17" label="Fund" max_length="40" name="fund" type="string"/>
+        <element attributes="38" label="Location of Service" max_length="80" name="location_of_service" type="string"/>
+        <element attributes="11" label="Orig. Max Amount" max_length="40" name="orig_max_amount" type="float"/>
+        <element attributes="30" label="Outstanding Line Amount" max_length="40" name="outstanding_line_amount" type="float"/>
+        <element attributes="40" display="true" label="Project Description" max_length="255" name="project_description" type="string"/>
+        <element attributes="39" label="Project ID" max_length="30" name="project_id" type="string"/>
+        <element attributes="08" label="Regis. Date" max_length="40" name="regis_date" type="glide_date"/>
+        <element attributes="23" label="Rept. Cat" max_length="6" name="rept_cat" type="string"/>
+        <element attributes="10" label="Rev. End Date" max_length="40" name="rev_end_date" type="glide_date"/>
+        <element attributes="12" label="Rev. Max Amount" max_length="40" name="rev_max_amount" type="float"/>
+        <element attributes="09" label="Rev. Start Date" max_length="40" name="rev_start_date" type="glide_date"/>
+        <element attributes="20" label="Sub-Fund" max_length="5" name="sub_fund" type="string"/>
+        <element attributes="22" label="Sub-Object" max_length="5" name="sub_object" type="string"/>
+        <element attributes="15" label="Total Amount Changes" max_length="40" name="total_amount_changes" type="float"/>
+        <element attributes="32" label="Vendor Addr. ID" max_length="3" name="vendor_addr_id" type="string"/>
+        <element attributes="33" label="Vendor Addr. Line 1" max_length="80" name="vendor_addr_line_1" type="string"/>
+        <element attributes="34" label="Vendor Addr. Line 2" max_length="80" name="vendor_addr_line_2" type="string"/>
+        <element attributes="35" label="Vendor City" max_length="30" name="vendor_city" type="string"/>
+        <element attributes="31" label="Vendor ID" max_length="10" name="vendor_id" type="string"/>
+        <element attributes="04" label="Vendor Name" max_length="80" name="vendor_name" type="string"/>
+        <element attributes="36" label="Vendor State" max_length="2" name="vendor_state" type="string"/>
+        <element attributes="37" label="Vendor Zip Code" max_length="10" name="vendor_zip_code" type="string"/>
+    </element>
+</database>

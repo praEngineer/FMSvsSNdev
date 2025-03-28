@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_documentation element="u_rev__start_date" label="Rev. Start Date" language="en" table="x_dosny_fms_fmsrawdata">
+        <sys_documentation action="INSERT_OR_UPDATE">
+            <element>u_rev__start_date</element>
+            <help/>
+            <hint/>
+            <label>Rev. Start Date</label>
+            <language>en</language>
+            <name>x_dosny_fms_fmsrawdata</name>
+            <plural>Rev. Start Dates</plural>
+            <sys_class_name>sys_documentation</sys_class_name>
+            <sys_created_by>sfarkas</sys_created_by>
+            <sys_created_on>2025-03-07 18:07:42</sys_created_on>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>Rev. Start Date</sys_name>
+            <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+            <sys_update_name>sys_documentation_x_dosny_fms_fmsrawdata_u_rev__start_date_en</sys_update_name>
+            <sys_updated_by>sfarkas</sys_updated_by>
+            <sys_updated_on>2025-03-07 18:07:42</sys_updated_on>
+            <url/>
+            <url_target/>
+        </sys_documentation>
+    </sys_documentation>
+</record_update>

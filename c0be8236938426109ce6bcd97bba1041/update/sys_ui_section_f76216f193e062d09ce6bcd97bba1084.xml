@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update>
+    <sys_ui_section caption="FMS imported data" section_id="f76216f193e062d09ce6bcd97bba1084" sys_domain="global" table="x_dosny_bit_procur_bit_procurement" version="3" view="">
+        <sys_ui_element action="INSERT_OR_UPDATE">
+            <element>x_dosny_fms_fms_encumbered_amount</element>
+            <position>0</position>
+            <sys_created_by>sfarkas</sys_created_by>
+            <sys_created_on>2025-03-28 14:31:43</sys_created_on>
+            <sys_id>91b29ef193e062d09ce6bcd97bba101d</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_ui_formatter/>
+            <sys_ui_section caption="FMS imported data" display_value="FMS imported data" name="x_dosny_bit_procur_bit_procurement" sys_domain="global" view="Default view">f76216f193e062d09ce6bcd97bba1084</sys_ui_section>
+            <sys_updated_by>sfarkas</sys_updated_by>
+            <sys_updated_on>2025-03-28 14:31:43</sys_updated_on>
+            <sys_user/>
+            <type/>
+        </sys_ui_element>
+        <sys_ui_section action="INSERT_OR_UPDATE">
+            <caption>FMS imported data</caption>
+            <header>false</header>
+            <name>x_dosny_bit_procur_bit_procurement</name>
+            <roles/>
+            <sys_class_name>sys_ui_section</sys_class_name>
+            <sys_created_by>sfarkas</sys_created_by>
+            <sys_created_on>2025-03-28 14:30:31</sys_created_on>
+            <sys_domain>global</sys_domain>
+            <sys_domain_path>/</sys_domain_path>
+            <sys_id>f76216f193e062d09ce6bcd97bba1084</sys_id>
+            <sys_mod_count>0</sys_mod_count>
+            <sys_name>x_dosny_bit_procur_bit_procurement</sys_name>
+            <sys_overrides/>
+            <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+            <sys_policy/>
+            <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+            <sys_update_name>sys_ui_section_f76216f193e062d09ce6bcd97bba1084</sys_update_name>
+            <sys_updated_by>sfarkas</sys_updated_by>
+            <sys_updated_on>2025-03-28 14:30:31</sys_updated_on>
+            <sys_user/>
+            <title>false</title>
+            <view display_value="Default view" name="NULL">Default view</view>
+            <view_name/>
+        </sys_ui_section>
+    </sys_ui_section>
+</record_update>

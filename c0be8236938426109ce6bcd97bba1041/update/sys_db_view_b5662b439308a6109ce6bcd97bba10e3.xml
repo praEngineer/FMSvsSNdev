@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view">
+    <sys_db_view action="INSERT_OR_UPDATE">
+        <description>Show encumberance versus budget amount for each PO Number</description>
+        <label>FMS Encumberance versus Budget Line Amou</label>
+        <name>x_dosny_fms_fmsencumberancevssnbudget</name>
+        <plural/>
+        <sys_class_name>sys_db_view</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-07 21:19:49</sys_created_on>
+        <sys_id>b5662b439308a6109ce6bcd97bba10e3</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dosny_fms_fmsencumberancevssnbudget</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_update_name>sys_db_view_b5662b439308a6109ce6bcd97bba10e3</sys_update_name>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-07 21:19:49</sys_updated_on>
+    </sys_db_view>
+</record_update>

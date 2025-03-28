@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element db_object_id="14cabe8b93c0a6109ce6bcd97bba10bd" extends="sys_import_set_row" label="FMSrawData" max_length="40" name="x_dosny_fms_fmsrawdata" type="collection">
+        <element label="enc_doc_id in BIT Procurement" max_length="40" name="enc_doc_id_in_bit_procurement" type="boolean"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Acct. Line Amount" label="Acct. Line Amount" max_length="40" name="u_acct__line_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Acct. Line Dept" label="Acct. Line Dept" max_length="40" name="u_acct__line_dept" type="string"/>
+        <element attributes="import_attribute_name=Acct. Line Retainage Amount" label="Acct. Line Retainage Amount" max_length="15" name="u_acct__line_retainage_amount" type="decimal"/>
+        <element attributes="import_attribute_name=Acct. Line #" label="Acct. Line #" max_length="40" name="u_acct__line__" type="integer"/>
+        <element attributes="import_attribute_name=AFY" label="AFY" max_length="40" name="u_afy" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=AP" label="AP" max_length="40" name="u_ap" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Approp" label="Approp" max_length="40" name="u_approp" type="string"/>
+        <element attributes="import_attribute_name=BFY" label="BFY" max_length="40" name="u_bfy" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Budget Code" label="Budget Code" max_length="40" name="u_budget_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Closed Line Amount" label="Closed Line Amount" max_length="40" name="u_closed_line_amount" type="string"/>
+        <element attributes="import_attribute_name=Comm. Line #" label="Comm. Line #" max_length="40" name="u_comm__line__" type="integer"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Detail Object" label="Detail Object" max_length="40" name="u_detail_object" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Doc Encumb Amount" label="Doc Encumb Amount" max_length="40" name="u_doc_encumb_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Doc Expend Amount" label="Doc Expend Amount" max_length="40" name="u_doc_expend_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Encumbrance Description" label="Encumbrance Description" max_length="60" name="u_encumbrance_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Encumbrance Method" label="Encumbrance Method" max_length="40" name="u_encumbrance_method" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Encumbrance Type" label="Encumbrance Type" max_length="40" name="u_encumbrance_type" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Enc Doc Code" label="Enc Doc Code" max_length="40" name="u_enc_doc_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Enc Doc Dept Code" label="Enc Doc Dept Code" max_length="40" name="u_enc_doc_dept_code" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Enc Doc ID" label="Enc Doc ID" max_length="40" name="u_enc_doc_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Fund" label="Fund" max_length="40" name="u_fund" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Location of Service" label="Location of Service" max_length="61" name="u_location_of_service" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Orig. Max Amount" label="Orig. Max Amount" max_length="40" name="u_orig__max_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Outstanding Line Amount" label="Outstanding Line Amount" max_length="40" name="u_outstanding_line_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Project Description" label="Project Description" max_length="54" name="u_project_description" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Project ID" label="Project ID" max_length="40" name="u_project_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Regis. Date" label="Regis. Date" max_length="40" name="u_regis__date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Rept. Cat" label="Rept. Cat" max_length="40" name="u_rept__cat" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Rev. End Date" label="Rev. End Date" max_length="40" name="u_rev__end_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Rev. Max Amount" label="Rev. Max Amount" max_length="40" name="u_rev__max_amount" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Rev. Start Date" label="Rev. Start Date" max_length="40" name="u_rev__start_date" type="glide_date_time"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sub-Fund" label="Sub-Fund" max_length="40" name="u_sub_fund" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Sub-Object" label="Sub-Object" max_length="40" name="u_sub_object" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Total Amount Changes" label="Total Amount Changes" max_length="40" name="u_total_amount_changes" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor Addr. ID" label="Vendor Addr. ID" max_length="40" name="u_vendor_addr__id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor Addr. Line 1" label="Vendor Addr. Line 1" max_length="65" name="u_vendor_addr__line_1" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor Addr. Line 2" label="Vendor Addr. Line 2" max_length="46" name="u_vendor_addr__line_2" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor City" label="Vendor City" max_length="40" name="u_vendor_city" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor ID" label="Vendor ID" max_length="40" name="u_vendor_id" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor Name" label="Vendor Name" max_length="59" name="u_vendor_name" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor State" label="Vendor State" max_length="40" name="u_vendor_state" type="string"/>
+        <element attributes="edge_encryption_enabled=true,import_attribute_name=Vendor Zip Code" label="Vendor Zip Code" max_length="40" name="u_vendor_zip_code" type="string"/>
+    </element>
+</database>

@@ -1,0 +1,155 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="DELETE">
+        <active>true</active>
+        <map display_value="FMStransform">5365034f9304a6109ce6bcd97bba1058</map>
+        <order>100</order>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate, isInsert) {
+    // 'source' = Import Set row fields
+    // 'target' = Target table record (may be unused if your main target is the procurement table)
+    // 'map'    = Mappings
+    // 'log'    = Logger
+    // 'isUpdate' and 'isInsert' indicate if the target record is new/updated
+
+    // 1. Grab the FMS "Enc Doc ID" from the import row
+    var encDocId = source.u_enc_doc_id.toString();  // Adjust field names as needed
+
+    // 2. Retrieve the "Acct Line Amount"
+    var acctLineAmount = parseFloat(source.u_acct_line_amount) || 0;
+
+    // 3. Use GlideRecord to find the matching record in the Procurement table
+    var grProc = new GlideRecord('x_dosny_bit_procur_bit_procurement');
+    grProc.addQuery('po_number', encDocId);
+    grProc.query();
+
+    if (grProc.next()) {
+        // 4. Update the new fms_encumbered_amount field with the Acct Line Amount
+        grProc.fms_encumbered_amount = acctLineAmount;
+
+        // 5. Calculate the difference
+        //    'encumbered' is presumably your existing field in the Procurement table
+        var existingEnc = parseFloat(grProc.encumbered) || 0;
+        var diff = acctLineAmount - existingEnc;
+
+        // 6. Store the difference in sn_fms_encumbrance_diff
+        grProc.sn_fms_encumbrance_diff = diff;
+
+        // 7. Save
+        grProc.update();
+    }
+    else {
+        // Optional: If no match is found, log it
+        log.info('No procurement record found for encDocId = ' + encDocId);
+    }
+
+})(source, target, map, log, isUpdate, isInsert);
+]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-28 13:11:32</sys_created_on>
+        <sys_id>17408e3d932062d09ce6bcd97bba105a</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onStart</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_update_name>sys_transform_script_17408e3d932062d09ce6bcd97bba105a</sys_update_name>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-28 13:11:32</sys_updated_on>
+        <when>onStart</when>
+    </sys_transform_script>
+    <sys_es_latest_script action="DELETE">
+        <id>17408e3d932062d09ce6bcd97bba105a</id>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-28 13:11:32</sys_created_on>
+        <sys_id>a2500271936062d09ce6bcd97bba1078</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-28 13:11:32</sys_updated_on>
+        <table>sys_transform_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FMS">c0be8236938426109ce6bcd97bba1041</application>
+        <file_path/>
+        <instance_id>d1068f71dbe79b08439ef70fbf96194a</instance_id>
+        <instance_name>nycdsdev1</instance_name>
+        <name>sys_transform_script_17408e3d932062d09ce6bcd97bba105a</name>
+        <payload>&lt;?xml version="1.0" encoding="UTF-8"?&gt;&lt;record_update table="sys_transform_script"&gt;&lt;sys_transform_script action="INSERT_OR_UPDATE"&gt;&lt;active&gt;true&lt;/active&gt;&lt;map display_value="FMStransform"&gt;5365034f9304a6109ce6bcd97bba1058&lt;/map&gt;&lt;order&gt;100&lt;/order&gt;&lt;script&gt;&lt;![CDATA[(function transformRow(source, target, map, log, isUpdate, isInsert) {
+    // 'source' = Import Set row fields
+    // 'target' = Target table record (may be unused if your main target is the procurement table)
+    // 'map'    = Mappings
+    // 'log'    = Logger
+    // 'isUpdate' and 'isInsert' indicate if the target record is new/updated
+
+    // 1. Grab the FMS "Enc Doc ID" from the import row
+    var encDocId = source.u_enc_doc_id.toString();  // Adjust field names as needed
+
+    // 2. Retrieve the "Acct Line Amount"
+    var acctLineAmount = parseFloat(source.u_acct_line_amount) || 0;
+
+    // 3. Use GlideRecord to find the matching record in the Procurement table
+    var grProc = new GlideRecord('x_dosny_bit_procur_bit_procurement');
+    grProc.addQuery('po_number', encDocId);
+    grProc.query();
+
+    if (grProc.next()) {
+        // 4. Update the new fms_encumbered_amount field with the Acct Line Amount
+        grProc.fms_encumbered_amount = acctLineAmount;
+
+        // 5. Calculate the difference
+        //    'encumbered' is presumably your existing field in the Procurement table
+        var existingEnc = parseFloat(grProc.encumbered) || 0;
+        var diff = acctLineAmount - existingEnc;
+
+        // 6. Store the difference in sn_fms_encumbrance_diff
+        grProc.sn_fms_encumbrance_diff = diff;
+
+        // 7. Save
+        grProc.update();
+    }
+    else {
+        // Optional: If no match is found, log it
+        log.info('No procurement record found for encDocId = ' + encDocId);
+    }
+
+})(source, target, map, log, isUpdate, isInsert);
+]]&gt;&lt;/script&gt;&lt;sys_class_name&gt;sys_transform_script&lt;/sys_class_name&gt;&lt;sys_created_by&gt;sfarkas&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-28 13:11:32&lt;/sys_created_on&gt;&lt;sys_id&gt;17408e3d932062d09ce6bcd97bba105a&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_name&gt;onStart&lt;/sys_name&gt;&lt;sys_package display_value="FMS" source="x_dosny_fms"&gt;c0be8236938426109ce6bcd97bba1041&lt;/sys_package&gt;&lt;sys_policy/&gt;&lt;sys_scope display_value="FMS"&gt;c0be8236938426109ce6bcd97bba1041&lt;/sys_scope&gt;&lt;sys_update_name&gt;sys_transform_script_17408e3d932062d09ce6bcd97bba105a&lt;/sys_update_name&gt;&lt;sys_updated_by&gt;sfarkas&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-28 13:11:32&lt;/sys_updated_on&gt;&lt;when&gt;onStart&lt;/when&gt;&lt;/sys_transform_script&gt;&lt;sys_es_latest_script action="INSERT_OR_UPDATE"&gt;&lt;id&gt;17408e3d932062d09ce6bcd97bba105a&lt;/id&gt;&lt;sys_created_by&gt;sfarkas&lt;/sys_created_by&gt;&lt;sys_created_on&gt;2025-03-28 13:11:32&lt;/sys_created_on&gt;&lt;sys_id&gt;a2500271936062d09ce6bcd97bba1078&lt;/sys_id&gt;&lt;sys_mod_count&gt;0&lt;/sys_mod_count&gt;&lt;sys_updated_by&gt;sfarkas&lt;/sys_updated_by&gt;&lt;sys_updated_on&gt;2025-03-28 13:11:32&lt;/sys_updated_on&gt;&lt;table&gt;sys_transform_script&lt;/table&gt;&lt;use_es_latest&gt;true&lt;/use_es_latest&gt;&lt;/sys_es_latest_script&gt;&lt;/record_update&gt;</payload>
+        <payload_hash>-1070596489</payload_hash>
+        <record_name>onStart</record_name>
+        <reverted_from/>
+        <source>10be8236938426109ce6bcd97bba1046</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-28 13:11:32</sys_created_on>
+        <sys_id>265086b1936062d09ce6bcd97bba108f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>195dce111380000001</sys_recorded_at>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-28 13:11:32</sys_updated_on>
+        <type>Transform Script</type>
+        <update_guid>665086b1006062d0c63ecab29811ab8e</update_guid>
+        <update_guid_history>665086b1006062d0c63ecab29811ab8e:-1070596489</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-28 13:12:14</sys_created_on>
+        <sys_db_object display_value="" name="sys_transform_script">sys_transform_script</sys_db_object>
+        <sys_id>b07feceb471b47209ce52a11472a8100</sys_id>
+        <sys_metadata>17408e3d932062d09ce6bcd97bba105a</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>onStart</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_parent display_value="FMStransform">5365034f9304a6109ce6bcd97bba1058</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_scope_delete display_value="">6dd061b3fcdd4b3985d92e06a9fda499</sys_scope_delete>
+        <sys_update_name>sys_transform_script_17408e3d932062d09ce6bcd97bba105a</sys_update_name>
+        <sys_update_version display_value="sys_transform_script_17408e3d932062d09ce6bcd97bba105a">265086b1936062d09ce6bcd97bba108f</sys_update_version>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-28 13:12:14</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

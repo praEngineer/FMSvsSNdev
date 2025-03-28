@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_package_dependency_m2m">
+    <sys_package_dependency_m2m action="INSERT_OR_UPDATE">
+        <dependency display_value="BIT Procurement" source="x_dosny_bit_procur">6f7103ea1b449d5010c26391ec4bcb6f</dependency>
+        <min_version>1.0.0</min_version>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-27 16:08:38</sys_created_on>
+        <sys_id>474f596d93acae909ce6bcd97bba1014</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-27 16:08:38</sys_updated_on>
+    </sys_package_dependency_m2m>
+</record_update>

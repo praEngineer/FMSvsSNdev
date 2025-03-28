@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="DELETE">
+        <active>true</active>
+        <left_join>false</left_join>
+        <order>100</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-10 13:18:07</sys_created_on>
+        <sys_id>b525ddc8931826109ce6bcd97bba104f</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dosny_bit_procur_bit_procurement_budget</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_update_name>sys_db_view_table_b525ddc8931826109ce6bcd97bba104f</sys_update_name>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-10 13:18:07</sys_updated_on>
+        <table>x_dosny_bit_procur_bit_procurement_budget</table>
+        <variable_prefix>budget</variable_prefix>
+        <view display_value="x_dosny_fms_fmsencumberancevssnbudget">b5662b439308a6109ce6bcd97bba10e3</view>
+        <where_clause/>
+    </sys_db_view_table>
+    <sys_update_version action="INSERT_OR_UPDATE">
+        <action>DELETE</action>
+        <application display_value="FMS">c0be8236938426109ce6bcd97bba1041</application>
+        <file_path/>
+        <instance_id>d1068f71dbe79b08439ef70fbf96194a</instance_id>
+        <instance_name>nycdsdev1</instance_name>
+        <name>sys_db_view_table_b525ddc8931826109ce6bcd97bba104f</name>
+        <payload><![CDATA[<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table"><sys_db_view_table action="INSERT_OR_UPDATE"><active>true</active><left_join>false</left_join><order>100</order><sys_class_name>sys_db_view_table</sys_class_name><sys_created_by>sfarkas</sys_created_by><sys_created_on>2025-03-10 13:18:07</sys_created_on><sys_id>b525ddc8931826109ce6bcd97bba104f</sys_id><sys_mod_count>0</sys_mod_count><sys_name>x_dosny_bit_procur_bit_procurement_budget</sys_name><sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package><sys_policy/><sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope><sys_update_name>sys_db_view_table_b525ddc8931826109ce6bcd97bba104f</sys_update_name><sys_updated_by>sfarkas</sys_updated_by><sys_updated_on>2025-03-10 13:18:07</sys_updated_on><table>x_dosny_bit_procur_bit_procurement_budget</table><variable_prefix>budget</variable_prefix><view display_value="x_dosny_fms_fmsencumberancevssnbudget">b5662b439308a6109ce6bcd97bba10e3</view><where_clause/></sys_db_view_table></record_update>]]></payload>
+        <payload_hash>1878690305</payload_hash>
+        <record_name>x_dosny_bit_procur_bit_procurement_budget</record_name>
+        <reverted_from/>
+        <source>10be8236938426109ce6bcd97bba1046</source>
+        <source_table>sys_update_set</source_table>
+        <state>previous</state>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-10 13:18:07</sys_created_on>
+        <sys_id>e735910c931826109ce6bcd97bba1035</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_recorded_at>19580349f600000001</sys_recorded_at>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-10 13:18:07</sys_updated_on>
+        <type>View Table</type>
+        <update_guid>ab35910c4f18261036ac11c8c64ce334</update_guid>
+        <update_guid_history>ab35910c4f18261036ac11c8c64ce334:1878690305</update_guid_history>
+    </sys_update_version>
+    <sys_metadata_delete action="INSERT_OR_UPDATE">
+        <sys_audit_delete/>
+        <sys_class_name>sys_metadata_delete</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-10 18:02:21</sys_created_on>
+        <sys_db_object display_value="" name="sys_db_view_table">sys_db_view_table</sys_db_object>
+        <sys_id>9751d30867894b36a55a10169c30df71</sys_id>
+        <sys_metadata>b525ddc8931826109ce6bcd97bba104f</sys_metadata>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>x_dosny_bit_procur_bit_procurement_budget</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_parent display_value="x_dosny_fms_fmsencumberancevssnbudget">b5662b439308a6109ce6bcd97bba10e3</sys_parent>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_scope_delete display_value="">6dd061b3fcdd4b3985d92e06a9fda499</sys_scope_delete>
+        <sys_update_name>sys_db_view_table_b525ddc8931826109ce6bcd97bba104f</sys_update_name>
+        <sys_update_version display_value="sys_db_view_table_b525ddc8931826109ce6bcd97bba104f">e735910c931826109ce6bcd97bba1035</sys_update_version>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-10 18:02:21</sys_updated_on>
+    </sys_metadata_delete>
+</record_update>

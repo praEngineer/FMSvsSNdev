@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_script">
+    <sys_transform_script action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <map display_value="FMStransform">5365034f9304a6109ce6bcd97bba1058</map>
+        <order>100</order>
+        <script><![CDATA[(function transformRow(source, target, map, log) {
+    // 'source' = Import Set row fields from x_dosny_fms_fmsrawdat
+    // 'target' = Target table record from x_dosny_fms_fmsencumberances 
+    // 'map'    = Mappings
+    // 'log'    = Logger
+    // 'isUpdate' and 'isInsert' indicate if the target record is new/updated
+
+    // 1. Grab the FMS "Enc Doc ID" from the import row
+    var encDocId = source.u_enc_doc_id.toString().trim();  
+
+    // 2. Retrieve the "Acct Line Amount"
+    var acctLineAmount = parseFloat(source.u_acct__line_amount) || 0;
+
+    // 3. Use GlideRecord to find the matching record in the Procurement table
+    var grProc = new GlideRecord('x_dosny_bit_procur_bit_procurement');
+    grProc.addQuery('po_number', encDocId);
+    grProc.query();
+
+    if (grProc.next()) {
+        // 4. Update the new fms_encumbered_amount field with the Acct Line Amount
+        grProc.x_dosny_fms_fms_encumbered_amount	 = acctLineAmount;
+
+        // 5. Calculate the difference
+        //    'encumbered' is presumably your existing field in the Procurement table
+        var existingEnc = parseFloat(grProc.encumbered) || 0;
+        var diff = acctLineAmount - existingEnc;
+
+        // 6. Store the difference in sn_fms_encumbrance_diff
+        grProc.x_dosny_fms_sn_fms_encumbrance_diff = diff;
+
+        // 7. Save
+		grProc.update();
+    }
+    else {
+        // Optional: If no match is found, log it
+		source.enc_doc_id_in_bit_procurement =  false;
+		source.update;
+    }
+
+})(source, target, map, log);
+
+]]></script>
+        <sys_class_name>sys_transform_script</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-28 13:12:28</sys_created_on>
+        <sys_id>6dfdb9bd932062d09ce6bcd97bba10ec</sys_id>
+        <sys_mod_count>6</sys_mod_count>
+        <sys_name>onAfter</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_update_name>sys_transform_script_6dfdb9bd932062d09ce6bcd97bba10ec</sys_update_name>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-28 15:44:24</sys_updated_on>
+        <when>onAfter</when>
+    </sys_transform_script>
+    <sys_es_latest_script action="INSERT_OR_UPDATE">
+        <id>6dfdb9bd932062d09ce6bcd97bba10ec</id>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-28 13:12:28</sys_created_on>
+        <sys_id>5890cab1936062d09ce6bcd97bba1039</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-28 13:12:28</sys_updated_on>
+        <table>sys_transform_script</table>
+        <use_es_latest>true</use_es_latest>
+    </sys_es_latest_script>
+</record_update>

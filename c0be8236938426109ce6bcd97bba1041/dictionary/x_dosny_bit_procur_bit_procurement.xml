@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="UTF-8"?><database>
+    <element attributes="email_client=true" audit="true" db_object_id="d80266001bc53550f91bda49b04bcbaa" extends="task" label="BIT Procurement" max_length="40" name="x_dosny_bit_procur_bit_procurement" type="collection">
+        <element default="0" label="fms encumbered amount " max_length="20" name="x_dosny_fms_fms_encumbered_amount" type="decimal"/>
+        <element default="0" label="sn fms encumbrance diff" max_length="20" name="x_dosny_fms_sn_fms_encumbrance_diff" type="decimal"/>
+    </element>
+</database>

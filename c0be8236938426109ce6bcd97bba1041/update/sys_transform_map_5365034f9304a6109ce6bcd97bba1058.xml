@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_transform_map">
+    <sys_transform_map action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <copy_empty_fields>true</copy_empty_fields>
+        <create_new_record_on_empty_coalesce_fields>true</create_new_record_on_empty_coalesce_fields>
+        <enforce_mandatory_fields>No</enforce_mandatory_fields>
+        <name>FMStransform</name>
+        <order>100</order>
+        <run_business_rules>true</run_business_rules>
+        <run_script>false</run_script>
+        <script><![CDATA[(function transformRow(source, target, map, log, isUpdate) {
+
+	// Add your code here
+
+})(source, target, map, log, action==="update");]]></script>
+        <source_table>x_dosny_fms_fmsrawdata</source_table>
+        <sys_class_name>sys_transform_map</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-07 18:54:53</sys_created_on>
+        <sys_id>5365034f9304a6109ce6bcd97bba1058</sys_id>
+        <sys_mod_count>0</sys_mod_count>
+        <sys_name>FMStransform</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_update_name>sys_transform_map_5365034f9304a6109ce6bcd97bba1058</sys_update_name>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-07 18:54:53</sys_updated_on>
+        <target_table>x_dosny_fms_fmsencumberances</target_table>
+    </sys_transform_map>
+</record_update>

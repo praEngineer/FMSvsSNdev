@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?><record_update table="sys_db_view_table">
+    <sys_db_view_table action="INSERT_OR_UPDATE">
+        <active>true</active>
+        <left_join>true</left_join>
+        <order>200</order>
+        <sys_class_name>sys_db_view_table</sys_class_name>
+        <sys_created_by>sfarkas</sys_created_by>
+        <sys_created_on>2025-03-10 18:32:29</sys_created_on>
+        <sys_id>582d9ac493d066109ce6bcd97bba10e6</sys_id>
+        <sys_mod_count>2</sys_mod_count>
+        <sys_name>x_dosny_fms_fmsencumberances</sys_name>
+        <sys_package display_value="FMS" source="x_dosny_fms">c0be8236938426109ce6bcd97bba1041</sys_package>
+        <sys_policy/>
+        <sys_scope display_value="FMS">c0be8236938426109ce6bcd97bba1041</sys_scope>
+        <sys_update_name>sys_db_view_table_582d9ac493d066109ce6bcd97bba10e6</sys_update_name>
+        <sys_updated_by>sfarkas</sys_updated_by>
+        <sys_updated_on>2025-03-10 20:15:27</sys_updated_on>
+        <table>x_dosny_fms_fmsencumberances</table>
+        <variable_prefix>fms</variable_prefix>
+        <view display_value="x_dosny_fms_fmsencumberancevssnbudget">b5662b439308a6109ce6bcd97bba10e3</view>
+        <where_clause>po_order_po_no=fms_enc_doc_id</where_clause>
+    </sys_db_view_table>
+</record_update>
